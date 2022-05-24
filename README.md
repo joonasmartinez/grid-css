@@ -1,10 +1,16 @@
+<div align="center"><code>Posteriormente será atualizado este ReadMe. Criado em 24/05/2022 - 18:34.</code></div>
+
 ## Layout GRID
 
 > ### Descrição Projeto
 
-Layout desenvolvido com GRID.
+Layout desenvolvido com GRID. O objetivo principal deste projeto é aperfeiçoar o entendimento com GRID.
 
-> Posteriormente será atualizado este ReadMe. Criado em 24/05/2022 - 18:34.
+> ### Função - a ser criado ainda.
+
+A ideia principal é o layout responsivo. E para complementar, será adicionado uma To do List ao site.
+
+
 
 ## Como rodar este projeto? 
 
