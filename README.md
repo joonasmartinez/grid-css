@@ -8,7 +8,9 @@ Layout desenvolvido com GRID. O objetivo principal deste projeto é aperfeiçoar
 
 > ### Função - a ser criado ainda.
 
-A ideia principal é o layout responsivo. E para complementar, será adicionado uma To do List ao site.
+A ideia principal é o layout responsivo. E para complementar a ideia, será adicionado uma To do List funcional ao site com as seguintes funções:
+- Adicionar tarefa;
+- Excluir tarefa.
 
 
 
