@@ -1,10 +1,8 @@
 body{
     box-sizing: border-box;
     margin:0;
+    /* background: linear-gradient(135deg, rgb(24, 42, 115) 0%, rgb(33, 138, 174) 69%, rgb(32, 167, 172) 89%); */
 
-}
-.box{
-    background-color: rgba(128, 128, 128, 0.356);
 }
 
 .box2, .box3, .box5{
@@ -21,10 +19,11 @@ body{
     grid-template-columns: minmax(0px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(0px, 1fr); 
     grid-template-areas: 
     "nav nav nav nav nav"
-    ". box2 box3 box3 ."
+    ". box2 box2 box3 ."
     ". box5 box5 box5 ."
     "box4 box4 box4 box4 box4"    
     ;
+    align-items: center;
     grid-gap: 6px;
 
 }
@@ -39,7 +38,7 @@ body{
 .nav{
     display: flex;
     flex-direction: column;
-    background-color: #58B6FA;
+    background-color: #58b6fa;
     justify-content: center;
     align-items: center;
     height: 5vh;
@@ -65,12 +64,35 @@ body{
 }
 
 .box2{
-    height: 20vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5vh;
     grid-area: box2;
+    font-size: 20px;
+    color:#ffa600;
 }
 .box3{
-    height: 20vh;
+    display: flex;
+    background-color: #F5C136;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 10vh;
     grid-area: box3;
+}
+.box3 > #task{
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.box3 > #countTask{
+    display: flex;
+    text-align: center;
+    color: #494949;
+    font-size: 20px;
 }
 .box4{
     display: flex;
@@ -78,17 +100,34 @@ body{
     justify-content: center;
     align-items: center;
     color:white;
-    background-color: #58B6FA;
+    background-color: #58b6fa;
     height: 5vh;
     grid-area: box4;
 }
 
 .box5{
-    align-items:flex-start;
-    height: 68vh;
+    display: block;
+    height: 69.9vh;
     grid-area: box5;
 }
 
+.box5 > #taskslistTitle{
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background: #494949;
+}
+
+.box5 > #tasksToDo{
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background: #494949;
+}
 @media screen and (max-width: 635px) {
 .container{
     display: block;
@@ -98,6 +137,14 @@ body{
     margin-top: 15px;
     border-radius: 2px;
     padding: 20px;
+}
+
+.box3 > #task{
+    color: #ffffff;
+    font-size: 30px;
+}
+.box2{
+    font-size: 30px;
 }
 }
 
