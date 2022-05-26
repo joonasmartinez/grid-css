@@ -13,7 +13,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: minmax(1px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(0px, 1fr); 
+    grid-template-columns: minmax(0px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(0px, 1fr); 
     grid-template-areas: 
     "nav nav nav nav nav"
     ". box2 box3 box3 ."
