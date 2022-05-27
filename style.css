@@ -213,6 +213,7 @@ body{
     padding: 5px;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 
 .taskDescription{
