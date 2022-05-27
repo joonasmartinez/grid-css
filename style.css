@@ -89,8 +89,8 @@ body{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    height: 100%;
 }
+
 .box3 .tasksChecked{
     display: flex;
     flex-direction: column;
@@ -98,8 +98,6 @@ body{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    height: 100%;
-
 }
 #tasksToDoCount{
     font-size: 35px;
@@ -230,7 +228,23 @@ body{
     padding: 10px
 }
 
+#addTask{
+    position: fixed;
+    color: whitesmoke;
+    border: 1px solid white;
+    bottom: 7%;
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    background-color: #58b6fa;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
+#addTask:hover{
+    background-color: #4897cf;
+}
 
 
 
@@ -258,6 +272,12 @@ body{
 }
 .box2{
     font-size: 30px;
+}
+
+#addTask{
+    bottom: 3%;
+    left: 45%;
+    cursor: none;
 }
 }
 
