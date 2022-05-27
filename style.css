@@ -232,19 +232,48 @@ body{
 #addTask{
     position: fixed;
     color: whitesmoke;
-    border: 1px solid white;
+    border: none;
     bottom: 7%;
     left: 85%;
-    width: 50px;
+    width: auto;
     height: 50px;
     background-color: #58b6fa;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.795);
     font-size: 100%;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 #addTask:hover{
     background-color: #4897cf;
+}
+
+.formCreateTask{
+    display: block;
+    position: fixed;
+    right:55px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff91;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.795);
+}
+.formCreateTask > form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+form > input{
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+
+form > button{
+    height: 35px;
+    margin-bottom: 15px;
 }
 
 
@@ -277,7 +306,7 @@ body{
 
 #addTask{
     bottom: 3%;
-    left: 45%;
+    left: 40%;
     cursor: none;
 }
 }
