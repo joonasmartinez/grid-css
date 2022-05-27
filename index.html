@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>GRID CSS</title>
 </head>
@@ -20,7 +23,7 @@
         <!-- INICIO BOX 2 -->
         <div class="box2">
 
-            <div id="welcome">Olá, hoje é</div>
+            <div id="welcome"></div>
             <div id="date">26/05/2022</div>
 
         </div> 
@@ -28,8 +31,14 @@
 
         <!-- INICIO BOX3 -->
         <div class="box3">
-            <div id="task">TAREFAS A FAZER</div>
-            <div id="countTask">25 of 30</div>
+            <div class="tasksToDo">
+                <div id="tasksToDoCount">80</div>
+                <div>TAREFAS A FAZER</div>
+            </div>
+            <div class="tasksChecked">
+                <div id="tasksCheckedCount">12</div>
+                <div>TAREFAS REALIZADAS</div>
+            </div>
         </div>
         <!-- FIM BOX 3 -->
 
@@ -145,7 +154,7 @@
         <!-- FIM BOX 5 -->
 
         <!-- FOOTER -->
-        <div class="box4">by JONAS MARTINEZ</div>
+        <div class="box4">Developer - Jonas Martinez</div>
     
     </div>
     <script src="./script.js"></script>

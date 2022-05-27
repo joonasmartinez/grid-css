@@ -1,9 +1,10 @@
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin:0;
     min-height: 650px;
     min-width: 350px;
+    background-color: #f7f7f7;
     /* background: linear-gradient(135deg, rgb(24, 42, 115) 0%, rgb(33, 138, 174) 69%, rgb(32, 167, 172) 89%); */
 }
 
@@ -64,39 +65,51 @@ body{
 }
 
 .box2{
-    background-color: white;
     flex-direction: column;
     justify-content: space-between;
     height: 5vh;
     grid-area: box2;
     font-size: 30px;
-    color:#ffa600;
+    color:#313131;
 }
 .box3{
     display: flex;
-    background-color: #F5C136;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
+    background-color: #f5c236d0;
+    overflow: hidden;
+    justify-content: space-evenly;
     height: 10vh;
     grid-area: box3;
 }
-.box3 > #task{
+.box3 .tasksToDo {
     display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid rgba(167, 167, 167, 0.322);
+    justify-content: space-around;
     text-align: center;
-    color: #ffffff;
-    font-size: 20px;
+    align-items: center;
+    height: 100%;
 }
-
-.box3 > #countTask{
+.box3 .tasksChecked{
     display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
     text-align: center;
-    color: #494949;
-    font-size: 20px;
+    align-items: center;
+    height: 100%;
+
+}
+#tasksToDoCount{
+    font-size: 35px;
+}
+#tasksCheckedCount{
+    font-size: 30px;
 }
 .box4{
     display: flex;
-    font-family:sans-serif;
+    font-size: 14px;
     justify-content: center;
     align-items: center;
     color:white;
