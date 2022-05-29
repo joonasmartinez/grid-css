@@ -1,16 +1,27 @@
+// Variáveis
+var date = new Date();
+
+
+
+
+
+
+
+// Funções
 function init(){
-    let tasks = document.querySelectorAll("tr");
-    
-    tasks.forEach((tr)=>{
-        tr.addEventListener('click', (tr)=>{
-            taskDone(tr);
-            
-        }, {once:true})
-    })
+
+    document.getElementById('date').innerHTML = date.toLocaleDateString();
+    document.getElementById('addTask').addEventListener('click', addTaskBar);
 
 }
 
-const taskDone = (tr)=>{
-    tr.path[1].classList.add('taskDone');
+const addTaskBar = ()=>{
+    let addtaskbar = document.getElementsByClassName("formCreateTask");
+    console.log(addtaskbar)
+    addtaskbar.hidden = !(addtaskbar.hidden)
 }
+
+
+// execuções
+
 init()
