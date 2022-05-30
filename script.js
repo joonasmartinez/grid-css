@@ -129,6 +129,7 @@ const addTaskBar = ()=>{
         document.getElementsByClassName("box5")[0].removeChild(addtaskbarC)
            
     })
+    inputEmpty()
 }  
 
 const taskbarSubmit = ()=>{
@@ -168,9 +169,8 @@ const taskbarSubmit = ()=>{
             updateCounts();
         })
 
-
+        clearInputs()
     }
-    clearInputs()
 
 }
 
