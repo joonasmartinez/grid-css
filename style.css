@@ -72,6 +72,10 @@ body{
     font-size: 30px;
     color:#313131;
 }
+
+.box2 #welcome{
+    font-size: 14px;
+}
 .box3{
     display: flex;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
@@ -151,7 +155,7 @@ body{
     min-height: 50px;
 }
 
-.taskCheck > input{
+.taskBarList > input{
     width: 20px;
     height: 20px;
     padding: 10px;

@@ -12,6 +12,7 @@ function init(){
     document.getElementById('date').innerHTML = date.toLocaleDateString();
     document.getElementById('addTask').addEventListener('click', addTaskBar);
     noTasks()
+    updateCounts()
 }
 
 function inputEmpty(){
@@ -35,6 +36,7 @@ function clearInputs(){
 
 }
 function noTasks(){
+    updateCounts()
     let text = document.createElement('p')
     if(tasks.length == 0){
         
@@ -43,6 +45,17 @@ function noTasks(){
     } else{
         try{document.getElementById("taskToDo").getElementsByTagName("p")[0].remove()}catch{}
     }
+}
+
+function updateCounts(){
+    document.getElementById("tasksToDoCount").innerHTML = tasks.length;
+    let tasksDone = 0;
+    tasks.forEach((task)=>{
+        if(task.querySelector("input").checked) tasksDone++;
+    })
+
+    document.getElementById("tasksCheckedCount").innerHTML = tasksDone;
+    
 }
 
 const addTaskBar = ()=>{
@@ -104,7 +117,7 @@ const taskbarSubmit = ()=>{
         let task = document.createElement('div');
         task.classList.add("taskBarList");
         task.innerHTML = `
-                <div class="taskCheck"><input type="checkbox"></div>
+                <input type="checkbox">
                 <div class="taskbox">
                     <div class="taskTime">
                     ${document.getElementById('inputHora').value}
@@ -130,6 +143,9 @@ const taskbarSubmit = ()=>{
             tasks.splice(tasks.indexOf(task), 1)
             noTasks()
             
+        })
+        task.getElementsByTagName("input")[0].addEventListener('click', ()=>{
+            updateCounts();
         })
 
 
