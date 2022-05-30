@@ -89,9 +89,13 @@ const addTaskBar = ()=>{
 
         event.preventDefault();
         taskbarSubmit();
-        
+           
+    })
+    document.getElementById('btnreset').addEventListener('click', (event)=>{
 
-        
+        event.preventDefault();
+        document.getElementsByClassName("box5")[0].removeChild(addtaskbarC)
+           
     })
 }  
 
