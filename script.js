@@ -57,6 +57,25 @@ function updateCounts(){
     document.getElementById("tasksCheckedCount").innerHTML = tasksDone;
     
 }
+function updateTasks(){
+    let Element = document.querySelector("#taskToDo");
+    for(let a=0;a < tasks.length ;a++){
+        Element.children[0].remove()
+    }
+
+    elementSort()
+
+    tasks.forEach((task)=>{
+        Element.appendChild(task)
+    })
+}
+
+function elementSort(){
+    tasks.sort((a, b)=>{
+        if(a.getElementsByClassName("taskTime")[0].innerHTML > b.getElementsByClassName("taskTime")[0].innerHTML) return 1;
+        if(a.getElementsByClassName("taskTime")[0].innerHTML < b.getElementsByClassName("taskTime")[0].innerHTML) return -1;
+    })
+}
 
 const addTaskBar = ()=>{
         if(document.getElementsByClassName('formCreateTask')[0]) return alert("Complete o preenchimento para adicionar a tarefa.");
@@ -138,6 +157,7 @@ const taskbarSubmit = ()=>{
         tasks.push(task);
         noTasks();
         document.getElementById("taskToDo").appendChild(task);
+        updateTasks();
         task.getElementsByClassName("taskAction")[0].addEventListener('click', ()=>{
             if(confirm("Confirme a exclusão desta tarefa."))task.remove();
             tasks.splice(tasks.indexOf(task), 1)
