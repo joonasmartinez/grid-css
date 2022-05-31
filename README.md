@@ -1,16 +1,37 @@
-<div align="center"><code>Posteriormente será atualizado este ReadMe. Criado em 24/05/2022 - 18:34.</code></div>
+<div align="center"><code>Readme atualizado em 31/05/2022 às 20:54</code></div>
+</br>
+<div align="center" >
+  
+  <img src="https://user-images.githubusercontent.com/84146200/171300687-6d882b98-0d6f-4e8a-945c-1d0eb56a240d.png" width="630px" />
+  
+  <img src="https://user-images.githubusercontent.com/84146200/171301440-8c45adcc-b67c-4040-a492-26f8cb35a8c0.png" height="400px"/>
+  
+   <p>Projeto com algumas tarefas adicionadas. Imagem a direita mostra layout responsivo aberto em Mobile.
+</div>
 
 ## Layout GRID
 
-> ### Descrição Projeto
+> ### Descrição
 
-Layout desenvolvido com GRID. O objetivo principal deste projeto é aperfeiçoar o entendimento com GRID.
+Este projeto é uma Lista de Tarefas simples que você adicionará Hora e Descrição da tarefa. As tarefas são organizadas automaticamente com base no horário de cima para baixo. (Mais cedo para mais tarde). Cada tarefa feita você irá assinalar o Checkbox que há ao lado de cada Tarefa, sendo automaticamente recalculado quantas tarefas foram concluídas.
 
-> ### Função - a ser criado ainda.
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/84146200/171301035-3e8989e0-867d-4e96-a74b-654ae023ffb1.png"/>
+<p>Imagem com zoom exibindo Tarefas concluídas.
+</div>
 
-A ideia principal é o layout responsivo. E para complementar a ideia, será adicionado uma To do List funcional ao site com as seguintes funções:
+Todas as tarefas são armazenadas na memória do navegador, então você poderá fechar a aba e retornar quando desejar que os dados não serão perdidos.
+
+> ### Funções
+
+
 - Adicionar tarefa;
-- Excluir tarefa.
+- Excluir tarefa;
+- Marcar como concluída;
+- Ordenação automática das tarefas (Baseado na hora da tarefa)
+- Salvamento automático;
+- Carregamento automático;
+- Layout responsivo.
 
 
 
