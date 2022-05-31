@@ -15,6 +15,20 @@ function init(){
     updateCounts()
 }
 
+function saveTasks(){
+    let savedTasks = [];
+    tasks.forEach((task)=>{
+        let obj = {
+            hora:task.querySelectorAll("div")[1].innerHTML.replaceAll("\n","").trim(),
+            desc:task.querySelectorAll("div")[2].innerHTML.replaceAll("\n","").trim(),
+            check:task.querySelector("input").checked
+        }
+        savedTasks.push(obj)
+    })
+    console.log(JSON.stringify(savedTasks))
+    localStorage.setItem("tasks", JSON.stringify(savedTasks))
+}
+
 function inputEmpty(){
     let inputDesc = document.getElementById('inputDescription')
     let inputHour = document.getElementById('inputHora');
