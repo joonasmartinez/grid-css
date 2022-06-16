@@ -8,6 +8,7 @@ var tasks=[];
 // Funções
 function init(){
 
+    if(localStorage.getItem("tasks")==null) createTasks();
     document.getElementById('date').innerHTML = date.toLocaleDateString();
     document.getElementById('addTask').addEventListener('click', addTaskBar);
     loadTasks()
@@ -26,6 +27,10 @@ function saveTasks(){
         savedTasks.push(obj)
     })
     localStorage.setItem("tasks", JSON.stringify(savedTasks))
+}
+
+function createTasks(){
+    return localStorage.setItem("tasks", "[]");
 }
 
 function loadTasks(){
